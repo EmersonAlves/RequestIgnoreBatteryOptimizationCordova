@@ -1,0 +1,17 @@
+{
+  "name": "cordova-permission-ignore-battery-optimization",
+  "version": "1.0.0",
+  "description": "request permission ignore battery optimization.",
+  "cordova": {
+    "id": "cordova-permission-ignore-battery-optimization",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Emerson Alves",
+  "license": "null"
+}

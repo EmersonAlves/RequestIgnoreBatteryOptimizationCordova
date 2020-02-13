@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-permission-ignore-battery-optimization"
+    version="1.0.0">
+    <name>cordova-permission-ignore-battery-optimization</name>
+    <description>request api json</description>
+    <license>null</license>
+
+    <js-module src="www/RequestIgnoreBatteryOptimizationCordova.js" name="RequestIgnoreBatteryOptimizationCordova">
+        <clobbers target="RequestIgnoreBatteryOptimizationCordova" />
+    </js-module>
+
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="RequestIgnoreBatteryOptimizationCordova" >
+                <param name="android-package" value="br.com.fabrica704.permission.RequestIgnoreBatteryOptimizationCordova"/>
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+        </config-file>
+
+        <source-file src="src/android/RequestIgnoreBatteryOptimizationCordova.java" target-dir="src/br/com/fabrica704/permission" />
+    </platform>
+
+</plugin>
