@@ -11,3 +11,13 @@ module.exports.requestPermission = function(successCallback, errorCallback) {
     []
   );
 };
+
+module.exports.checkPermission = function(callback) {
+  cordova.exec(
+    callback,
+    () => {},
+    "RequestIgnoreBatteryOptimizationCordova",
+    "checkPermission",
+    []
+  );
+};
